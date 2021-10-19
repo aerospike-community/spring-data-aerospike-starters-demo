@@ -1,0 +1,50 @@
+= spring-data-aerospike-starters-demo
+
+Work in progress...
+
+Here are just some initial notes.
+
+Initialize project using Spring Boot Initializr:
+https://start.spring.io/
+
+Add production dependencies:
+
+https://search.maven.org/artifact/com.aerospike/spring-boot-starter-data-aerospike
+
+<dependency>
+  <groupId>com.aerospike</groupId>
+  <artifactId>spring-boot-starter-data-aerospike</artifactId>
+  <version>0.6.0</version>
+</dependency>
+
+Add test dependencies:
+
+https://github.com/Playtika/testcontainers-spring-boot
+
+<dependency>
+    <groupId>com.playtika.testcontainers</groupId>
+    <artifactId>embedded-aerospike</artifactId>
+    <version>2.0.16</version>
+    <scope>test</scope>
+</dependency>
+
+embedded.aerospike.dockerImage (default is set to 'aerospike/aerospike-server:4.3.0.8')
+
+https://github.com/rest-assured/rest-assured
+
+<dependency>
+  <groupId>io.rest-assured</groupId>
+  <artifactId>rest-assured</artifactId>
+</dependency>
+
+
+Create entity.
+
+Create repository interface.
+
+Create test.
+
+Minimal application is up and running.
+
+
+Voila.
