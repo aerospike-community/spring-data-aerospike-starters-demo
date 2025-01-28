@@ -1,80 +1,22 @@
-= spring-data-aerospike-starters-demo
+package com.aerospike.starters.demo;
 
-== Setup project
+import jakarta.validation.Valid;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.dao.DataRetrievalFailureException;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
 
-Initialize project using Spring Boot Initializr
-https://start.spring.io/
+import java.util.List;
 
-Add production dependencies:
-
-.pom.xml
-[source,xml]
-----
-<dependency>
-  <groupId>com.aerospike</groupId>
-  <artifactId>spring-boot-starter-data-aerospike</artifactId>
-</dependency>
-----
-
-Add test dependencies:
-
-https://github.com/Playtika/testcontainers-spring-boot
-
-.pom.xml
-[source,xml]
-----
-<dependency>
-    <groupId>com.playtika.testcontainers</groupId>
-    <artifactId>embedded-aerospike</artifactId>
-    <scope>test</scope>
-</dependency>
-----
-
-https://github.com/rest-assured/rest-assured
-
-.pom.xml
-[source,xml]
-----
-<dependency>
-  <groupId>io.rest-assured</groupId>
-  <artifactId>rest-assured</artifactId>
-</dependency>
-----
-
-== Setup persistence
-
-Create `Customer` entity:
-
-.Customer.java
-[source,java]
-----
-@Data
-@NoArgsConstructor
-@AllArgsConstructor
-public class Customer {
-    @Id
-    private String id;
-    private String firstName;
-    @Indexed(type = IndexType.STRING, collectionType = IndexCollectionType.DEFAULT)
-    private String lastName;
-    private long age;
-}
-----
-
-Create repository interface:
-
-.SyncCustomerRepository.java
-[source,java]
-----
-public interface SyncCustomerRepository extends AerospikeRepository<Customer, String>, CrudRepository<Customer, String> {
-    List<Customer> findByLastNameOrderByFirstNameAsc(String lastName);
-}
-----
-
-Create controller:
-.SyncCustomerController.java
-[source,java]
-----
 @Slf4j
 @RequestMapping("/sync")
 @RestController
@@ -146,8 +88,3 @@ public class SyncCustomerController {
         return result;
     }
 }
-----
-
-Minimal application is up and running.
-
-Voila.
