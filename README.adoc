@@ -72,6 +72,7 @@ public interface SyncCustomerRepository extends AerospikeRepository<Customer, St
 ----
 
 Create controller:
+
 .SyncCustomerController.java
 [source,java]
 ----
