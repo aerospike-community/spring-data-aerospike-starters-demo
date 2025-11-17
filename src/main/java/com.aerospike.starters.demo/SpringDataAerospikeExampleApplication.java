@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class SpringDataAerospikeExampleApplication {
 
-    /*
+/*
     In order to test the application with local Aerospike Server Docker image using REST API:
     - use the following configuration in application.properties:
         spring.aerospike.hosts=localhost:3000
@@ -22,7 +22,7 @@ public class SpringDataAerospikeExampleApplication {
                 "id": "id1",
                 "firstName": "name1"
     }'   localhost:8080/sync/customer
-        */
+*/
 
     public static void main(String[] args) {
         SpringApplication.run(SpringDataAerospikeExampleApplication.class, args);

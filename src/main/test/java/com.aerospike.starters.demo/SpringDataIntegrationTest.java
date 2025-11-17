@@ -22,7 +22,7 @@ import static org.hamcrest.Matchers.hasSize;
 // When there is namespace property given
 public class SpringDataIntegrationTest {
 
-    /*
+/*
     In order to run this test class with local Aerospike Server Docker image:
     - use the following configuration in application.properties:
         spring.aerospike.hosts=localhost:3000
@@ -33,7 +33,7 @@ public class SpringDataIntegrationTest {
         embedded.containers.enabled=false
     - run Aerospike Server Docker image
     - run the tests
-    */
+*/
 
     @LocalServerPort
     int port;

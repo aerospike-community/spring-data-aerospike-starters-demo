@@ -15,9 +15,11 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 
 @SpringBootTest
-// This test class requires commenting out namespace in application.properties,
-// and also commenting out classes SyncCustomerController and SyncCustomerRepository.
-// Only the client bean is loaded when there is no namespace given (only hosts)
+/*
+    This test class requires commenting out spring.data.aerospike.namespace in application.properties,
+    and also commenting out classes SyncCustomerController and SyncCustomerRepository.
+    Only the client bean is loaded when there is no namespace given (only hosts)
+*/
 public class SyncClientOnlyTests {
 
     @Autowired
