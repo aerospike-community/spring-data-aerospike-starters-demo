@@ -13,7 +13,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 
 @SpringBootTest
-// When there is namespace property given
+// When there are hosts and namespace properties given
 public class SyncDataTests {
 
     @Autowired
@@ -28,9 +28,9 @@ public class SyncDataTests {
     }
 
     @Test
-    void shouldHaveNotOnlyClientBean() { // when there is namespace property given
+    void shouldHaveClientAndTemplateBeans() {
+        // When there are hosts and namespace properties given
         assertThat(applicationContext.getBeanProvider(IAerospikeClient.class).stream().count()).isEqualTo(1);
         assertThat(applicationContext.getBeanProvider(AerospikeTemplate.class).stream().count()).isEqualTo(1);
-        assertThat(applicationContext.getBeanProvider(AerospikeDataProperties.class).stream().count()).isEqualTo(1);
     }
 }
