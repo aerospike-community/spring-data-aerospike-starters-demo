@@ -4,7 +4,6 @@ import com.aerospike.client.AerospikeClient;
 import com.aerospike.client.IAerospikeClient;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.autoconfigure.data.aerospike.AerospikeDataProperties;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.context.ApplicationContext;
 import org.springframework.data.aerospike.core.AerospikeTemplate;

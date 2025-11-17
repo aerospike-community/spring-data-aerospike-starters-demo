@@ -36,7 +36,7 @@ public class SyncCustomerController {
     public ResponseEntity<Customer> getCustomerById(@PathVariable(value = "id") String customerId) {
         return repository.findById(customerId)
                 .map(body -> {
-                    log.info("Retrieved " + body);
+                    log.info("Retrieved {}", body);
                     return ResponseEntity.ok(body);
                 })
                 .orElse(ResponseEntity.noContent().build());
@@ -51,7 +51,7 @@ public class SyncCustomerController {
                     existing.setLastName(customer.getLastName());
                     existing.setAge(customer.getAge());
                     Customer result = repository.save(existing);
-                    log.info("Updated " + result);
+                    log.info("Updated {}", result);
                     return result;
                 })
                 .map(ResponseEntity::ok)
@@ -84,7 +84,7 @@ public class SyncCustomerController {
     @GetMapping("/customers/search")
     public List<Customer> getAllCustomersByLastName(@RequestParam(value = "lastName") String lastName) {
         List<Customer> result = repository.findByLastNameOrderByFirstNameAsc(lastName);
-        log.info("Retrieved all customers with last name " + lastName);
+        log.info("Retrieved all customers with last name {}", lastName);
         return result;
     }
 }
