@@ -22,15 +22,18 @@ import static org.hamcrest.Matchers.hasSize;
 // When there is namespace property given
 public class SpringDataIntegrationTest {
 
-    /*
-    Using application with REST API and Aerospike Server Docker image:
-    - run SpringAerospikeDataExampleApplication in debugger with Docker image running
-    - send the request:
-    curl -X POST   -H 'Content-Type: application/json'   -d '{
-            "id": "id1",
-            "firstName": "name1"
-    }'   localhost:8080/sync/customer
-    */
+/*
+    In order to run this test class with local Aerospike Server Docker image:
+    - use the following configuration in application.properties:
+        spring.aerospike.hosts=localhost:3000
+        spring.data.aerospike.namespace=test
+        spring.data.aerospike.scans-enabled=true
+        spring.aerospike.write.send-key=true
+    - use the following configuration in bootstrap.properties:
+        embedded.containers.enabled=false
+    - run Aerospike Server Docker image
+    - run the tests
+*/
 
     @LocalServerPort
     int port;
