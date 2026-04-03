@@ -1,0 +1,12 @@
+com/aerospike/starters/nettyeventloops/repository/ReactiveMovieRepository.class
+com/aerospike/starters/nettyeventloops/configuration/EventLoopConfigurationDefault.class
+com/aerospike/starters/demo/ReactiveCustomerController.class
+com/aerospike/starters/demo/ReactiveCustomerRepository.class
+com/aerospike/starters/nettyeventloops/configuration/EventLoopConfigurationCustomNio.class
+com/aerospike/starters/nettyeventloops/entity/MovieDocument$MovieDocumentBuilder.class
+com/aerospike/starters/nettyeventloops/configuration/EventLoopConfigurationNewNettyApi.class
+com/aerospike/starters/nettyeventloops/ReactiveNettyEventLoopsApplication.class
+com/aerospike/starters/nettyeventloops/configuration/EventLoopConfigurationIoUring.class
+com/aerospike/starters/nettyeventloops/entity/MovieDocument.class
+com/aerospike/starters/demo/SpringDataAerospikeExampleApplication.class
+com/aerospike/starters/demo/Customer.class

@@ -1,0 +1,13 @@
+com/aerospike/starters/demo/PriceConverters$PriceToMapConverter.class
+com/aerospike/starters/demo/AddressConverters$AddressToMapConverter.class
+com/aerospike/starters/demo/SyncCustomerController.class
+com/aerospike/starters/demo/Price.class
+com/aerospike/starters/demo/PriceConverters$MapToPriceConverter.class
+com/aerospike/starters/demo/PriceConverters.class
+com/aerospike/starters/demo/SyncCustomerRepository.class
+com/aerospike/starters/demo/Product.class
+com/aerospike/starters/demo/AddressConverters$MapToAddressConverter.class
+com/aerospike/starters/demo/SpringDataAerospikeExampleApplication.class
+com/aerospike/starters/demo/Address.class
+com/aerospike/starters/demo/AddressConverters.class
+com/aerospike/starters/demo/Customer.class

@@ -1,0 +1,9 @@
+/home/agr/Repos/spring-data-aerospike-starters-demo/sync-demo/src/main/java/com/aerospike/starters/demo/Address.java
+/home/agr/Repos/spring-data-aerospike-starters-demo/sync-demo/src/main/java/com/aerospike/starters/demo/AddressConverters.java
+/home/agr/Repos/spring-data-aerospike-starters-demo/sync-demo/src/main/java/com/aerospike/starters/demo/Customer.java
+/home/agr/Repos/spring-data-aerospike-starters-demo/sync-demo/src/main/java/com/aerospike/starters/demo/Price.java
+/home/agr/Repos/spring-data-aerospike-starters-demo/sync-demo/src/main/java/com/aerospike/starters/demo/PriceConverters.java
+/home/agr/Repos/spring-data-aerospike-starters-demo/sync-demo/src/main/java/com/aerospike/starters/demo/Product.java
+/home/agr/Repos/spring-data-aerospike-starters-demo/sync-demo/src/main/java/com/aerospike/starters/demo/SpringDataAerospikeExampleApplication.java
+/home/agr/Repos/spring-data-aerospike-starters-demo/sync-demo/src/main/java/com/aerospike/starters/demo/SyncCustomerController.java
+/home/agr/Repos/spring-data-aerospike-starters-demo/sync-demo/src/main/java/com/aerospike/starters/demo/SyncCustomerRepository.java

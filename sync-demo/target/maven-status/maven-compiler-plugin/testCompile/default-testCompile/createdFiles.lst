@@ -1,0 +1,6 @@
+com/aerospike/starters/demo/SyncClientOnlyTests$ClientOnlyConfig.class
+com/aerospike/starters/demo/SyncClientOnlyTests.class
+com/aerospike/starters/demo/SyncDataTests.class
+com/aerospike/starters/demo/SpringDataIntegrationTest.class
+com/aerospike/starters/demo/MultipleCustomConvertersTests$ConverterConfig.class
+com/aerospike/starters/demo/MultipleCustomConvertersTests.class
