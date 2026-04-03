@@ -1,0 +1,9 @@
+com/aerospike/starters/nettyeventloops/ReactiveDefaultEventLoopTests.class
+com/aerospike/starters/demo/ReactiveSpringDataIntegrationTest.class
+com/aerospike/starters/nettyeventloops/ReactiveCustomNioEventLoopTests.class
+com/aerospike/starters/demo/ReactiveClientOnlyTests.class
+com/aerospike/starters/nettyeventloops/ReactiveNewNettyApiEventLoopTests.class
+com/aerospike/starters/nettyeventloops/ReactiveNettyEventLoopsApplicationTest.class
+com/aerospike/starters/demo/ReactiveDataTests.class
+com/aerospike/starters/nettyeventloops/ReactiveIoUringEventLoopTests.class
+com/aerospike/starters/demo/ReactiveClientOnlyTests$ReactiveClientOnlyConfig.class

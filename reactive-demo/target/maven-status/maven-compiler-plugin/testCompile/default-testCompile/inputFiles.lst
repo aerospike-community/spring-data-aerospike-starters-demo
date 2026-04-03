@@ -1,0 +1,8 @@
+/home/agr/Repos/spring-data-aerospike-starters-demo/reactive-demo/src/test/java/com/aerospike/starters/demo/ReactiveClientOnlyTests.java
+/home/agr/Repos/spring-data-aerospike-starters-demo/reactive-demo/src/test/java/com/aerospike/starters/demo/ReactiveDataTests.java
+/home/agr/Repos/spring-data-aerospike-starters-demo/reactive-demo/src/test/java/com/aerospike/starters/demo/ReactiveSpringDataIntegrationTest.java
+/home/agr/Repos/spring-data-aerospike-starters-demo/reactive-demo/src/test/java/com/aerospike/starters/nettyeventloops/ReactiveCustomNioEventLoopTests.java
+/home/agr/Repos/spring-data-aerospike-starters-demo/reactive-demo/src/test/java/com/aerospike/starters/nettyeventloops/ReactiveDefaultEventLoopTests.java
+/home/agr/Repos/spring-data-aerospike-starters-demo/reactive-demo/src/test/java/com/aerospike/starters/nettyeventloops/ReactiveIoUringEventLoopTests.java
+/home/agr/Repos/spring-data-aerospike-starters-demo/reactive-demo/src/test/java/com/aerospike/starters/nettyeventloops/ReactiveNettyEventLoopsApplicationTest.java
+/home/agr/Repos/spring-data-aerospike-starters-demo/reactive-demo/src/test/java/com/aerospike/starters/nettyeventloops/ReactiveNewNettyApiEventLoopTests.java
